@@ -47,7 +47,7 @@ public class SimpleFirstPerson : MonoBehaviour
         {
             GameObject holdPosObj = new GameObject("HoldPosition");
             holdPosObj.transform.SetParent(cameraHolder);
-            holdPosObj.transform.localPosition = new Vector3(0, 0, 1f); // 1 метр перед камерой
+            holdPosObj.transform.localPosition = new Vector3(0, 0.5f, 0.5f); // 1 метр перед камерой
             holdPosition = holdPosObj.transform;
         }
 

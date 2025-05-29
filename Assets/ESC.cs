@@ -19,6 +19,7 @@ public class ESC : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
         else Cursor.lockState = CursorLockMode.Locked;
+
         if (Input.GetKeyUp(KeyCode.Escape))
         {
             if (isPaused)
@@ -53,7 +54,8 @@ public class ESC : MonoBehaviour
     }
     public void QuitButton()
     {
-        Application.Quit();
+       Time.timeScale = 1f;
+        SceneManager.LoadScene("menu 1");
     }
     public void MenuButton()
     {
